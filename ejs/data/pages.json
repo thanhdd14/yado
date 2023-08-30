@@ -1,7 +1,7 @@
 {
 	"pages": [
 		{
-			"id": "form",
+			"id": "register",
 			"parentId1": "",
 			"parentId2": "",
 			"parentId3": "",
@@ -16,7 +16,7 @@
 			"bread3_url": "",
 			"bread4_url": "",
 			"bread5_url": "",
-			"template": "form",
+			"template": "register",
 			"title": "",
 			"description": "",
 			"description_meta": "",
