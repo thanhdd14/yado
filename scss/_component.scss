@@ -1,0 +1,63 @@
+@use "vars" as *;
+
+
+.c-fc{ //font-color
+	&--white{
+		color: white !important;
+	}
+	&--black{
+		color: black !important;
+	}
+}
+
+
+
+.c-ft{//font-family
+	&--en{
+		font-family: $font-en;
+	}
+	&--jp{
+		font-family: $font-jp;
+	}
+}
+
+
+
+
+.c-al{
+	&--c{
+		text-align: center !important;
+	}
+	
+	&--r{
+		text-align: right !important
+	}
+	
+	&--l{
+		text-align: left !important;
+	}
+}
+
+
+
+.heading-ttl{
+	display: block;
+	@include font-size(24);
+}
+
+.c-btn{
+	display: inline-block;
+	padding: 8px 20px;
+	@include font-size(14);
+	cursor: pointer;
+	border: none;
+	outline: none;
+	@include smooth-transition;
+	&--blue{
+		background: #1890FF;
+		color: white;
+	}
+	&:hover{
+		opacity: 0.7;
+	}
+}

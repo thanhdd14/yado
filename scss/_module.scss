@@ -1,0 +1,243 @@
+@use "vars" as *;
+
+
+.inner {
+	background: white;
+	position: relative;
+	padding: 40px;
+}
+
+
+
+
+
+//form input
+.form-control{
+	display: block;
+	width: 100%;
+	height: 45px;
+	background: white;
+	border: 1px solid #ccc;
+	font-weight: 500;
+	padding: 5px 10px;
+	@include font-size(15);
+	&:focus{
+		border-color: #66afe9;
+		outline: 0;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+	}
+}
+
+//HTML CSS radio end check box
+
+//<ul class="pure-list">
+//	<li>
+//		<div class="pure-list__input">
+//			<input name="radio" type="radio" class="radio" checked="checked">
+//			<span>Option 1</span>
+//		</div>
+//	</li>
+//
+//	<li>
+//		<div class="pure-list__input">
+//			<input name="radio" type="radio" class="radio">
+//			<span>Option 1</span>
+//		</div>
+//	</li>
+//
+//	<li>
+//		<div class="pure-list__input">
+//			<input name="checkbox" type="checkbox" checked="checked">
+//			<span>Choice A</span>
+//		</div>
+//	</li>
+//
+//	<li>
+//		<div class="pure-list__input">
+//			<input name="checkbox" type="checkbox">
+//			<span>Choice B</span>
+//		</div>
+//	</li>
+//</ul>
+
+//radio end check box
+.pure-list{
+	&__input{
+		position: relative;
+		input{
+			position: absolute;
+			top:  0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			opacity: 0;
+			cursor: pointer;
+			&[type="checkbox"]{
+				& + span{
+					&:after{
+						background-color: transparent;
+						top: 50%;
+						left: 4px;
+						width: 8px;
+						height: 3px;
+						margin-top: -4px;
+						border-style: solid;
+						border-color: #ffffff;
+						border-width: 0 0 3px 3px;
+						border-image: none;
+						transform: rotate(-45deg) scale(0);
+					}
+				}
+				&:checked{
+					& + span{
+						&:after{
+							content: '';
+							transform: rotate(-45deg) scale(1);
+							transition: transform 200ms ease-out;
+						}
+						&:before{
+							animation: borderscale 200ms ease-in;
+							background: #4F8196;
+						}
+					}
+				}
+			}
+			&[type="radio"]{
+				+ span{
+					&:after,&:before{
+						border-radius: 50%;
+					}
+				}
+				&:checked{
+					& + span{
+						&:before{
+							animation: borderscale 300ms ease-in;
+							background-color: white;
+						}
+						&:after{
+							transform: scale(1);
+						}
+					}
+				}
+			}
+		}
+		span{
+			display: block;
+			position: relative;
+			padding: 10px 0 10px 40px;
+			vertical-align: middle;
+			user-select: none;
+			cursor: pointer;
+			&:before{
+				box-sizing: content-box;
+				content: '';
+				color: #4F8196;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 14px;
+				height: 14px;
+				margin-top: -9px;
+				border: 2px solid #4F8196;
+				text-align: center;
+				transition: all 0.4s ease;
+			}
+			&:after{
+				box-sizing: content-box;
+				content: '';
+				background-color: #4F8196;
+				position: absolute;
+				top: 50%;
+				left: 4px;
+				width: 10px;
+				height: 10px;
+				margin-top: -5px;
+				transform: scale(0);
+				transform-origin: 50%;
+				transition: transform 200ms ease-out;
+			}
+		}
+	}
+}
+
+
+.sec-heading{
+	padding: 15px 40px;
+	background: white;
+	@include font-size(14);
+	.breadcrumb{
+		@include flex(0,center,wrap);
+		margin-bottom: 30px;
+		a{
+			display: inline-block;
+			position: relative;
+			color: #008ef4;
+			padding: 0 15px 0 0;
+			margin: 0 15px 0 0;
+			&:before{
+				content: "";
+				position: absolute;
+				bottom: 1px;
+				left: 0;
+				right: 15px;
+				height: 1px;
+				background: #008ef4;
+			}
+			&:after{
+				content: "";
+				border: solid #008EF4;
+				border-width: 0 1px 1px 0;
+				display: inline-block;
+				padding: 3px;
+				transform: rotate(-45deg);
+				position: absolute;
+				top: 6px;
+				right: 0;
+			}
+		}
+	}
+}
+.sec-content{
+	padding: 40px 40px 0;
+	@include font-size(14);
+}
+.navigation-show{
+	@include flex(end,0,wrap);
+	margin-bottom: 50px;
+}
+.pagination{
+	@include flex(center,center);
+	@include font-size(14);
+	line-height: 1;
+	a,span{
+		@include flex(center,center,wrap);
+		color: black;
+		@include smooth-transition;
+		width: 32px;
+		height: 32px;
+		border: 1px solid #D9D9D9;
+		border-radius: 2px;
+		font-family: $font-en;
+		padding-top: 2px;
+		&:hover,&.active{
+			opacity: 1;
+			color: #1890FF;
+			border: 1px solid #1890FF;
+		}
+		&.disabled{
+			pointer-events: none;
+			color: #D9D9D9;
+		}
+		&.page{
+			&-next,&-prev{
+				padding-top: 0;
+			}
+		}
+	}
+	li{
+		margin: 0 2px;
+	}
+}
+
