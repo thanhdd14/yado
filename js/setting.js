@@ -32,3 +32,10 @@ $(function () {
         inputElement: document.getElementById('demo-multiple-select-input')
     });
 });
+
+
+$('.js-change-item').on('click', function(){
+    // $(".change-item__list.active").removeClass("active");
+    $(this).next(".change-item__list").toggleClass("active");
+    $(this).toggleClass("active");
+});
