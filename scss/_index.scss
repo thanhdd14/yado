@@ -12,7 +12,7 @@
 		border-bottom: 1px solid #F0F0F0;
 		th,td{
 			padding: 15px 10px;
-			&:nth-child(1){
+			&:nth-child(1),&:last-child{
 				width: 70px;
 			}
 			&:nth-child(5),
@@ -223,7 +223,7 @@
 		align-items: center;
 		@include font-size(21);
 		position: absolute;
-		top: 7px;
+		top: 0;
 		right: 0;
 		cursor: pointer;
 		@include smooth-transition;
