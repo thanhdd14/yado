@@ -9,6 +9,7 @@
 		<meta name="keywords" content="">
 		<meta name="format-detection" content="telephone=no">
 		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+		<link type="text/css" rel="stylesheet" href="./css/mobiscroll.jquery.min.css">
 		<link type="text/css" rel="stylesheet" href="./css/styles.css">
 	</head>
 	<body>
@@ -52,9 +53,24 @@
 									</select>
 								</div>
 								<div class="register-heading__item">
-									<select class="form-control">
-										<option>ホテルを選択してください</option>
-									</select>
+									<div mbsc-page class="demo-multiple-select">
+										<div style="height:100%">
+											<label>
+												<span class="add-multiple">+OTAサイト</span>
+												<input mbsc-input id="demo-multiple-select-input" placeholder="Please select..." data-dropdown="true" data-input-style="outline" data-label-style="stacked" data-tags="true">
+											</label>
+											<select class="form-control" id="demo-multiple-select" multiple="multiple">
+												<option value="1">楽天</option>
+												<option value="2">じゃらん</option>
+												<option value="3">じゃらん</option>
+												<option value="4">じゃらん</option>
+												<option value="5">じゃらん</option>
+												<option value="6">じゃらん</option>
+												<option value="7">じゃらん</option>
+												<option value="8">じゃらん</option>
+											</select>
+										</div>
+									</div>
 								</div>
 								<div class="register-heading__item">
 									<select class="form-control">
@@ -573,8 +589,8 @@
 				</section>
 			</main>
 		</div>
-		<script src="./js/jquery-3.6.0.min.js"></script>
-		<script src="./js/js-load-more.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="./js/mobiscroll.jquery.min.js"></script>
 		<script src="./js/setting.js"></script>
 	</body>
 </html>

@@ -17,9 +17,24 @@
 						</select>
 					</div>
 					<div class="register-heading__item">
-						<select class="form-control">
-							<option>ホテルを選択してください</option>
-						</select>
+						<div mbsc-page class="demo-multiple-select">
+							<div style="height:100%">
+								<label>
+									<span class="add-multiple">+OTAサイト</span>
+									<input mbsc-input id="demo-multiple-select-input" placeholder="Please select..." data-dropdown="true" data-input-style="outline" data-label-style="stacked" data-tags="true" />
+								</label>
+								<select class="form-control" id="demo-multiple-select" multiple>
+									<option value="1">楽天</option>
+									<option value="2">じゃらん</option>
+									<option value="3">じゃらん</option>
+									<option value="4">じゃらん</option>
+									<option value="5">じゃらん</option>
+									<option value="6">じゃらん</option>
+									<option value="7">じゃらん</option>
+									<option value="8">じゃらん</option>
+								</select>
+							</div>
+						</div>
 					</div>
 					<div class="register-heading__item">
 						<select class="form-control">
@@ -557,4 +572,6 @@
 			</div>
 		</form>
 	</section>
+
+
 </main>

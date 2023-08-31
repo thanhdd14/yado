@@ -9,6 +9,7 @@
 	<meta name="keywords" content="<%= pageData.keyword %>">
 	<meta name="format-detection" content="telephone=no">
 	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link type="text/css" rel="stylesheet" href="<%= RELATIVE_PATH %>css/mobiscroll.jquery.min.css">
 	<link type="text/css" rel="stylesheet" href="<%= RELATIVE_PATH %>css/styles.css">
 </head>
 <body>
@@ -18,8 +19,8 @@
 		<%- include(pageData.template, {datalabel:'data'}) %>
 	</div>
 
-	<script src="<%= RELATIVE_PATH %>js/jquery-3.6.0.min.js"></script>
-	<script src="<%= RELATIVE_PATH %>js/js-load-more.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="<%= RELATIVE_PATH %>js/mobiscroll.jquery.min.js"></script>
 	<script src="<%= RELATIVE_PATH %>js/setting.js"></script>
 </body>
 </html>
