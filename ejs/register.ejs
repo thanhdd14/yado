@@ -8,9 +8,9 @@
 		</h1>
 	</section>
 	<section class="sec-content">
-		<div class="inner inner--1000">
-			<form>
-				<div class="register-heading flex">
+		<form>
+			<div class="register-block">
+				<div class="register-block__heading flex">
 					<div class="register-heading__item">
 						<select class="form-control">
 							<option>ホテルを選択してください</option>
@@ -27,456 +27,534 @@
 						</select>
 					</div>
 				</div>
-				<div class="register-block">
-					<h2 class="register-block__ttl">共通項目</h2>
-					<dl class="register-item flex">
-						<dt>
-							<sup>*</sup>部屋タイプ名
-						</dt>
-						<dd>
-							<input type="text" class="form-control mw-400">
-						</dd>
-					</dl>
-					<dl class="register-item flex">
-						<dt>
-							部屋タイプ説明
-						</dt>
-						<dd>
-							<textarea class="form-control mw-400"></textarea>
-						</dd>
-					</dl>
-					<dl class="register-item flex">
-						<dt>
-							グローバル集客<br>サービス用追加<br>情報
-						</dt>
-						<dd>
-							<h3 class="register-item__ttl">部屋の特徴</h3>
-							<div class="register-boxsmall flex">
-								<div class="register-boxsmall__item">
-									<p>建物・立地</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
-								</div>
-								<div class="register-boxsmall__item">
-									<p>フロア</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
+				<h2 class="register-block__ttl">共通項目</h2>
+				<dl class="register-item flex">
+					<dt>
+						<sup>*</sup>部屋タイプ名
+					</dt>
+					<dd>
+						<input type="text" class="form-control mw-400">
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						部屋タイプ説明
+					</dt>
+					<dd>
+						<textarea class="form-control mw-400"></textarea>
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						グローバル集客<br>サービス用追加<br>情報
+					</dt>
+					<dd>
+						<h3 class="register-item__ttl">部屋の特徴</h3>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<p>建物・立地</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+							<div class="register-boxsmall__item">
+								<p>フロア</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+						</div>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<p>グレード</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+							<div class="register-boxsmall__item">
+								<p>眺望</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+							<div class="register-boxsmall__item">
+								<p>部屋・設備補足</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+						</div>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<p>タバコ</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+							<div class="register-boxsmall__item">
+								<p>インターネット</p>
+								<select class="form-control">
+									<option>選択してください</option>
+								</select>
+							</div>
+						</div>
+						<div class="register-boxsmall flex flex--light-end">
+							<div class="register-boxsmall__item">
+								<p>広さ</p>
+								<div class="box flex flex--light-center">
+									<input type="text" class="form-control mw-100">
+									<span>m2</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex">
-								<div class="register-boxsmall__item">
-									<p>グレード</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
-								</div>
-								<div class="register-boxsmall__item">
-									<p>眺望</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
-								</div>
-								<div class="register-boxsmall__item">
-									<p>部屋・設備補足</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
+							<div class="register-boxsmall__item">
+								<p>寝具</p>
+								<div class="box flex flex--light-center">
+									<span>シングルベッド</span>
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex">
-								<div class="register-boxsmall__item">
-									<p>タバコ</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
-								</div>
-								<div class="register-boxsmall__item">
-									<p>インターネット</p>
-									<select class="form-control">
-										<option>選択してください</option>
-									</select>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>セミダブルベッド</span>
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex flex--light-end">
-								<div class="register-boxsmall__item">
-									<p>広さ</p>
-									<div class="box flex flex--light-center">
-										<input type="text" class="form-control mw-100">
-										<span>m2</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<p>寝具</p>
-									<div class="box flex flex--light-center">
-										<span>シングルベッド</span>
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>セミダブルベッド</span>
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
+						</div>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>ダブルベッド</span>
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex">
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>ダブルベッド</span>
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>ダブルベッド</span>
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>ダブルベッド</span>
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex">
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>キングベッド</span>
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>ソファベッド</span>
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
+						</div>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>キングベッド</span>
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex flex--light-end">
-								<div class="register-boxsmall__item">
-									<p>2段ベッド（バンクベッド）</p>
-									<div class="box flex flex--light-center">
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<p>エクストラベッド（その他）</p>
-									<div class="box flex flex--light-center">
-										<input type="text" class="form-control mw-100">
-										<span>台</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>布団</span>
-										<input type="text" class="form-control mw-100">
-										<span>組</span>
-									</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>ソファベッド</span>
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<h3 class="register-item__ttl">[部屋の特徴(わけあり)]</h3>
-							<ul class="pure-list flex">
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox" checked="checked">
-										<span>騒音あり</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>冷暖房なし</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>階段利用のみ</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>眺望なし</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>和式トイレ</span>
-									</div>
-								</li>
-							</ul>
-							<h3 class="register-item__ttl">[受入条件]</h3>
-							<ul class="pure-list flex">
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox" >
-										<span>男性専用</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>女性専用</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>相部屋（ドミトリー）</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>カプセルルーム</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>部屋指定不可</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>ユニバーサル</span>
-									</div>
-								</li>
-							</ul>
-						</dd>
-					</dl>
-					<dl class="register-item flex">
-						<dt>
-							<sup>*</sup>部屋定員
-						</dt>
-						<dd>
-							<div class="register-boxsmall flex mb0">
-								<div class="register-boxsmall__item mbpc-10 mbsp-10">
-									<div class="box flex flex--light-center">
-										<span>最小</span>
-										<input type="text" class="form-control mw-100">
-										<span>人</span>
-									</div>
+						</div>
+						<div class="register-boxsmall flex flex--light-end">
+							<div class="register-boxsmall__item">
+								<p>2段ベッド（バンクベッド）</p>
+								<div class="box flex flex--light-center">
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
-							<div class="register-boxsmall flex">
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<span>最大</span>
-										<input type="text" class="form-control mw-100">
-										<span>人</span>
-									</div>
+							<div class="register-boxsmall__item">
+								<p>エクストラベッド（その他）</p>
+								<div class="box flex flex--light-center">
+									<input type="text" class="form-control mw-100">
+									<span>台</span>
 								</div>
 							</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>布団</span>
+									<input type="text" class="form-control mw-100">
+									<span>組</span>
+								</div>
+							</div>
+						</div>
+						<h3 class="register-item__ttl">[部屋の特徴(わけあり)]</h3>
+						<ul class="pure-list flex">
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox" checked="checked">
+									<span>騒音あり</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>冷暖房なし</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>階段利用のみ</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>眺望なし</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>和式トイレ</span>
+								</div>
+							</li>
+						</ul>
+						<h3 class="register-item__ttl">[受入条件]</h3>
+						<ul class="pure-list flex">
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox" >
+									<span>男性専用</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>女性専用</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>相部屋（ドミトリー）</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>カプセルルーム</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>部屋指定不可</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>ユニバーサル</span>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						<sup>*</sup>部屋定員
+					</dt>
+					<dd>
+						<div class="register-boxsmall flex mb0">
+							<div class="register-boxsmall__item mbpc-10 mbsp-10">
+								<div class="box flex flex--light-center">
+									<span>最小</span>
+									<input type="text" class="form-control mw-100">
+									<span>人</span>
+								</div>
+							</div>
+						</div>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<span>最大</span>
+									<input type="text" class="form-control mw-100">
+									<span>人</span>
+								</div>
+							</div>
+						</div>
 
-						</dd>
-					</dl>
-					<dl class="register-item flex">
-						<dt>
-							<sup>*</sup>ルームタイプ
-						</dt>
-						<dd>
-							<h3 class="register-item__ttl">洋室</h3>
-							<ul class="pure-list flex">
-								<li>
-									<div class="pure-list__input">
-										<input name="radio" type="radio" class="radio" checked="checked">
-										<span>シングル</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio" type="radio" class="radio">
-										<span>セミダブル</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio" type="radio" class="radio">
-										<span>ダブル</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio" type="radio" class="radio">
-										<span>トリプル</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio" type="radio" class="radio">
-										<span>4ベット</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio" type="radio" class="radio">
-										<span>その他</span>
-									</div>
-								</li>
-							</ul>
-							<h3 class="register-item__ttl">和室</h3>
-							<ul class="pure-list flex mb0">
-								<li>
-									<div class="pure-list__input">
-										<input name="radio2" type="radio" class="radio" checked="checked">
-										<span>和室</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio2" type="radio" class="radio">
-										<span>和洋室</span>
-									</div>
-								</li>
-							</ul>
-							<p>※セミダブルは、検索時はシングル扱いとします。</p>
-						</dd>
-					</dl>
-					<dl class="register-item flex">
-						<dt>
-							部屋の特徴
-						</dt>
-						<dd>
-							<h3 class="register-item__ttl">洋室</h3>
-							<ul class="pure-list flex mb0">
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>バス</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>トイレ</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>客室内に専用露天風呂あり</span>
-									</div>
-								</li>
-							</ul>
-							<ul class="pure-list flex mb0">
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>特別室・スイート・離れ</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>禁煙ルーム</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>部屋でインターネット</span>
-									</div>
-								</li>
-							</ul>
-							<p>
-								※複数選択可能です。
-							</p>
-						</dd>
-					</dl>
-					<dl class="register-item flex">
-						<dt>
-							<sup>*</sup>基本提供室数<br>　の設定
-						</dt>
-						<dd>
-							<h3 class="register-item__ttl">期間の設定</h3>
-							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<select class="form-control">
-											<option>2023</option>
-										</select>
-										<span>人</span>
-									</div>
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						<sup>*</sup>ルームタイプ
+					</dt>
+					<dd>
+						<h3 class="register-item__ttl">洋室</h3>
+						<ul class="pure-list flex">
+							<li>
+								<div class="pure-list__input">
+									<input name="radio" type="radio" class="radio" checked="checked">
+									<span>シングル</span>
 								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<select class="form-control">
-											<option>8</option>
-										</select>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="radio" type="radio" class="radio">
+									<span>セミダブル</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="radio" type="radio" class="radio">
+									<span>ダブル</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="radio" type="radio" class="radio">
+									<span>トリプル</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="radio" type="radio" class="radio">
+									<span>4ベット</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="radio" type="radio" class="radio">
+									<span>その他</span>
+								</div>
+							</li>
+						</ul>
+						<h3 class="register-item__ttl">和室</h3>
+						<ul class="pure-list flex mb0">
+							<li>
+								<div class="pure-list__input">
+									<input name="radio2" type="radio" class="radio" checked="checked">
+									<span>和室</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="radio2" type="radio" class="radio">
+									<span>和洋室</span>
+								</div>
+							</li>
+						</ul>
+						<p>※セミダブルは、検索時はシングル扱いとします。</p>
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						部屋の特徴
+					</dt>
+					<dd>
+						<h3 class="register-item__ttl">洋室</h3>
+						<ul class="pure-list flex mb0">
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>バス</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>トイレ</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>客室内に専用露天風呂あり</span>
+								</div>
+							</li>
+						</ul>
+						<ul class="pure-list flex mb0">
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>特別室・スイート・離れ</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>禁煙ルーム</span>
+								</div>
+							</li>
+							<li>
+								<div class="pure-list__input">
+									<input name="checkbox" type="checkbox">
+									<span>部屋でインターネット</span>
+								</div>
+							</li>
+						</ul>
+						<p>
+							※複数選択可能です。
+						</p>
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						<sup>*</sup>基本提供室数<br>　の設定
+					</dt>
+					<dd>
+						<h3 class="register-item__ttl">期間の設定</h3>
+						<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<select class="form-control">
+										<option>2023</option>
+									</select>
+									<span>人</span>
+								</div>
+							</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<select class="form-control">
+										<option>8</option>
+									</select>
+									<span>月</span>
+								</div>
+							</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<select class="form-control">
+										<option>24</option>
+									</select>
+									<span>日～</span>
+								</div>
+							</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+
+									<select class="form-control">
+										<option>2023</option>
+									</select>
+									<span>年</span>
+								</div>
+							</div>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<select class="form-control">
+										<option>8</option>
 										<span>月</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<select class="form-control">
-											<option>24</option>
-										</select>
-										<span>日～</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-
-										<select class="form-control">
-											<option>2023</option>
-										</select>
-										<span>年</span>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<select class="form-control">
-											<option>8</option>
-											<span>月</span>
-										</select>
-									</div>
-								</div>
-								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center">
-										<select class="form-control">
-											<option>24</option>
-
-										</select>
-										<span>日</span>
-									</div>
+									</select>
 								</div>
 							</div>
-							<p class="mbpc-30 mbsp-20">
-								※売り出す最小の提供室数を設定してください。販売開始後、日毎に詳細<br>
-								設定を行う事ができます。設定期間以降は自動的に売り止めとして設定されます。
-							</p>
-							<table class="show-code">
-								<tr>
-									<th>日</th>
-									<th>月</th>
-									<th>火</th>
-									<th>水</th>
-									<th>木</th>
-									<th>金</th>
-									<th>土</th>
-								</tr>
-								<tr>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-									<td><input type="text" class="form-control"></td>
-								</tr>
-							</table>
-						</dd>
-					</dl>
+							<div class="register-boxsmall__item">
+								<div class="box flex flex--light-center">
+									<select class="form-control">
+										<option>24</option>
+
+									</select>
+									<span>日</span>
+								</div>
+							</div>
+						</div>
+						<p class="mbpc-30 mbsp-20">
+							※売り出す最小の提供室数を設定してください。販売開始後、日毎に詳細<br>
+							設定を行う事ができます。設定期間以降は自動的に売り止めとして設定されます。
+						</p>
+						<table class="show-code">
+							<tr>
+								<th>日</th>
+								<th>月</th>
+								<th>火</th>
+								<th>水</th>
+								<th>木</th>
+								<th>金</th>
+								<th>土</th>
+							</tr>
+							<tr>
+								<td><input type="text" class="form-control"></td>
+								<td><input type="text" class="form-control"></td>
+								<td><input type="text" class="form-control"></td>
+								<td><input type="text" class="form-control"></td>
+								<td><input type="text" class="form-control"></td>
+								<td><input type="text" class="form-control"></td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+						</table>
+					</dd>
+				</dl>
+				<dl class="register-item flex">
+					<dt>
+						部屋の代表写<br>真設定
+					</dt>
+					<dd>
+						<h3 class="register-item__ttl">期間の設定</h3>
+						<div class="show-upload flex flex--light-center flex--center">
+							<input type="file" id="upload-file">
+							<div class="show-upload__fill"></div>
+							<div class="show-upload__note">
+								写真説明文
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</div>
+			<div class="register-block">
+				<h2 class="register-block__ttl">個別項目</h2>
+				<dl class="register-item flex">
+					<dt>
+						<sup>*</sup>OTAサイト
+					</dt>
+					<dd>
+						<div class="register-boxsmall flex">
+							<div class="register-boxsmall__item">
+								<select class="form-control mw-120">
+									<option>じゃらん</option>
+								</select>
+							</div>
+						</div>
+					</dd>
+				</dl>
+
+				<div class="js-item-fill">
+					<div class="js-odd">
+						<div class="js-odd__remove"><i class="fa-regular fa-rectangle-xmark"></i></div>
+						<dl class="register-item flex">
+							<dt>
+								<sup>*</sup>個別項目名
+							</dt>
+							<dd>
+								<div class="register-boxsmall flex">
+									<div class="register-boxsmall__item item--auto">
+										<div class="box box--02 flex flex--light-center">
+											<input type="text" class="form-control mw-120" >
+										</div>
+
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box box--02 flex flex--light-center">
+											<span><sup>*</sup>入力タイプ</span>
+											<select class="form-control mw-120">
+												<option>テキスト</option>
+											</select>
+										</div>
+
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box box--02 flex flex--light-center">
+											<span><sup>*</sup>内容</span>
+											<select class="form-control mw-120">
+												<option>テキスト</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</dd>
+						</dl>
+					</div>
 				</div>
-			</form>
-		</div>
+				<div class="add-view flex flex--center">
+					<span class="add-view__sub">＋新しい項目を追加する</span>
+				</div>
+			</div>
+			<div class="add-block flex flex--center">
+				<span class="add-block__sub"><i class="fa-solid fa-plus"></i></span>
+			</div>
+			<div class="register-sub flex flex--center">
+				<button type="button" class="c-btn">キャンセル</button>
+				<button type="button" class="c-btn c-btn--blue">保存</button>
+			</div>
+		</form>
 	</section>
 </main>

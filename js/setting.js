@@ -4,6 +4,27 @@ $('.header-nav__sub').on('click', function(){
     $(this).next(".header-nav__menu").slideToggle().toggleClass("active");;
 });
 
+$("#upload-file").change(function() {
+    filename = this.files[0].name;
+   $(".show-upload__fill").text(filename);
+    $(".show-upload__note").addClass("active");
+});
+
+var item = $(".js-item-fill");
+var itemFill = item.html();
+$('.add-view__sub').on('click', function(){
+    $(".js-item-fill").append(itemFill);
+    $('.js-odd__remove').on('click', function(){
+        $(this).parent().remove()
+    });
+});
+
+$('.js-item-fill').repeater({
+    show: function () {
+        $(this).slideDown();
+    }
+});
+
 
 // $(document).on("click", function(){
 // 	$("aa").hide();

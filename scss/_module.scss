@@ -1,14 +1,11 @@
 @use "vars" as *;
 
 
-.inner {
+.block {
 	background: white;
 	position: relative;
 	padding: 40px;
 	margin: 0 auto;
-	&--1000{
-		max-width: 1000px;
-	}
 }
 
 .flex{
@@ -64,39 +61,13 @@ select.form-control{
 	&::-ms-expand {
 		display: none;
 	}
+	&.mw-100,&.mw-120{
+		background: white url(../img/arrow-dow.png) no-repeat 94%;
+		background-size: 11px;
+	}
 }
 
-//HTML CSS radio end check box
-//
-//<ul class="pure-list">
-//	<li>
-//		<div class="pure-list__input">
-//			<input name="radio" type="radio" class="radio" checked="checked">
-//			<span>Option 1</span>
-//		</div>
-//	</li>
-//
-//	<li>
-//		<div class="pure-list__input">
-//			<input name="radio" type="radio" class="radio">
-//			<span>Option 1</span>
-//		</div>
-//	</li>
-//
-//	<li>
-//		<div class="pure-list__input">
-//			<input name="checkbox" type="checkbox" checked="checked">
-//			<span>Choice A</span>
-//		</div>
-//	</li>
-//
-//	<li>
-//		<div class="pure-list__input">
-//			<input name="checkbox" type="checkbox">
-//			<span>Choice B</span>
-//		</div>
-//	</li>
-//</ul>
+
 
 //radio end check box
 .pure-list{
@@ -243,7 +214,7 @@ select.form-control{
 	}
 }
 .sec-content{
-	padding: 40px 40px 0;
+	padding: 40px 40px 100px;
 	@include font-size(14);
 }
 .navigation-show{
@@ -288,13 +259,20 @@ select.form-control{
 
 }
 .mw{
-	&-400{
-		max-width: 400px !important;
-	}
+
 	&-100{
 		max-width: 100px !important;
+	}
+	&-120{
+		max-width: 120px !important;
+	}
+	&-400{
+		max-width: 400px !important;
 	}
 }
 .w66{
 	width: 66% !important;
+}
+.item--auto{
+	width: auto !important;
 }
