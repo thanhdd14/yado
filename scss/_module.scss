@@ -259,7 +259,6 @@ select.form-control{
 
 }
 .mw{
-
 	&-100{
 		max-width: 100px !important;
 	}
@@ -273,6 +272,32 @@ select.form-control{
 .w66{
 	width: 66% !important;
 }
+.w75{
+	width: 75% !important;
+}
+.w100{
+	width: 100% !important;
+}
 .item--auto{
 	width: auto !important;
+}
+.hidden{
+	display: none !important;
+}
+
+.ml{
+	&--15{
+		margin-left: 15px;
+	}
+}
+.mr{
+	&--15{
+		margin-right: 15px !important;
+	}
+	&--30{
+		margin-right: 30px !important;
+	}
+	&--50{
+		margin-right: 50px !important;
+	}
 }
