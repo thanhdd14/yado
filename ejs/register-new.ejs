@@ -51,97 +51,24 @@
 						<li>シークレットプラン</li>
 					</ul>
 					<ul class="plan-block__option js-plan--03">
-						<li>最初からやり直す</li>
-						<li class="active">プラン登録を開始する</li>
+						<li class="move-tab active">最初からやり直す</li>
+						<li class="sub-tab">プラン登録を開始する</li>
 					</ul>
 				</div>
-				<h3 class="register-item__ttl">3. プランを登録してください。</h3>
-				<div class="register-block__heading flex flex--center flex--light-center">
-					<span class="register-block__heading-coppy">以前登録したプランの内容をコピーして使う</span>
-					<span class="register-block__heading-coppy-btn">コピーする</span>
-				</div>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>登録期間の設定
-					</dt>
-					<dd>
-						<h3 class="register-item__ttl">※売り出す料金が決定している期間を設定してください。</h3>
-						<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>2023</option>
-									</select>
-									<span>人</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>8</option>
-									</select>
-									<span>月</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>24</option>
-									</select>
-									<span>日～</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
 
-									<select class="form-control">
-										<option>2023</option>
-									</select>
-									<span>年</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>8</option>
-										<span>月</span>
-									</select>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>24</option>
-
-									</select>
-									<span>日</span>
-								</div>
-							</div>
-						</div>
-
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>掲載期間の設定
-					</dt>
-					<dd>
-						<ul class="pure-list flex mb0">
-							<li class="w100 radiocopy">
-								<div class="pure-list__input">
-									<input name="radiocopy" type="radio" class="radio" >
-									<span>設定しない</span>
-								</div>
-							</li>
-							<li class="w100 radiocopy-off">
-								<div class="pure-list__input">
-									<input name="radiocopy" type="radio" class="radio" checked="checked">
-									<span>設定する</span>
-								</div>
-							</li>
-						</ul>
-						<div class="js-date-coppy">
-							<p>以前登録したプランの内容をコピーして使う</p>
+				<!--tab-01-->
+				<div class="tab-content active hidden">
+					<h3 class="register-item__ttl">3. プランを登録してください。</h3>
+					<div class="register-block__heading flex flex--center flex--light-center">
+						<span class="register-block__heading-coppy">以前登録したプランの内容をコピーして使う</span>
+						<span class="register-block__heading-coppy-btn">コピーする</span>
+					</div>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>登録期間の設定
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl">※売り出す料金が決定している期間を設定してください。</h3>
 							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
 								<div class="register-boxsmall__item">
 									<div class="box flex flex--light-center">
@@ -194,300 +121,328 @@
 									</div>
 								</div>
 							</div>
-							<p class="c-fc--red">
-								※通常販売しているプランを割安料金・特典を設定せずに期間限定販売した場合、不当表示にあたる可能性があります。ご注意ください。
-							</p>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item mbpc-30 flex">
-					<dt>
-						<sup>*</sup>プラン名
-					</dt>
-					<dd>
-						<div class="flex flex--light-center">
-							<input type="text" class="form-control w75">
-							<span class="c-fc--red ml--15">(全角50文字以内)</span>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>プランの説明
-					</dt>
-					<dd>
-						<textarea class="form-control w66 mbpc-10"></textarea>
-						<p class="c-fc--red">(全角1000文字以内)(2000バイト)</p>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						グローバル集<br>客サービス用<br>追加情報
-					</dt>
-					<dd>
-						<h3 class="register-item__ttl">[プランの特徴]</h3>
-						<p>食事 <span class="c-fc--red">※食事付プランの場合のみ、食事の特徴をチェックしてください。</span></p>
-						<h3 class="register-item__ttl">■朝食</h3>
-						<p>【ジャンル】</p>
-						<ul class="pure-list flex">
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox" >
-									<span>和食</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>洋食</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>中華</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>バイキング</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>軽食</span>
-								</div>
-							</li>
-						</ul>
-						<h3 class="register-item__ttl">■夕食</h3>
-						<p>【ジャンル】</p>
-						<ul class="pure-list flex">
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox" >
-									<span>イタリアン</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>中華</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>フレンチ</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>BBQ</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>会席</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>バイキング</span>
-								</div>
-							</li>
-						</ul>
-						<p>【メインの食材】</p>
-						<ul class="pure-list flex">
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox" >
-									<span>海鮮</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>伊勢海老</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>カニ</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>鯛</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>アワビ</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>フグ</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>牛肉</span>
-								</div>
-							</li>
-						</ul>
-						<p>その他の特徴</p>
-						<ul class="pure-list flex">
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox" >
-									<span>早割</span>
-								</div>
-							</li>
-							<li>
-								<div class="pure-list__input">
-									<input name="checkbox" type="checkbox">
-									<span>期間限定</span>
-								</div>
-							</li>
-						</ul>
-						<h3 class="register-item__ttl">[フリーワード(英語)] <span class="c-fc--red">※選択肢にない場合、以下フリーワードで入力してください。</span></h3>
-						<span class="c-fc--blue js-block-border">編集</span>
-						<div class="block-border hidden">
-							<h3 class="register-item__ttl">[受入条件]</h3>
-							<ul class="pure-list flex">
-								<li>
+
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>掲載期間の設定
+						</dt>
+						<dd>
+							<ul class="pure-list flex mb0">
+								<li class="w100 radiocopy">
 									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox" >
-										<span>男性限定</span>
+										<input name="radiocopy" type="radio" class="radio" >
+										<span>設定しない</span>
 									</div>
 								</li>
-								<li>
+								<li class="w100 radiocopy-off">
 									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>女性限定</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>50歳以上</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>60歳以上</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>おまかせ客室</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>清掃なし</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>改装・工事中</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>停電あり</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>誕生日限定</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>学生限定</span>
+										<input name="radiocopy" type="radio" class="radio" checked="checked">
+										<span>設定する</span>
 									</div>
 								</li>
 							</ul>
-							<h3 class="register-item__ttl">[フリーワード(英語)] <span class="c-fc--red">※選択肢にない場合、以下フリーワードで入力してください。</span></h3>
+							<div class="js-date-coppy">
+								<p>以前登録したプランの内容をコピーして使う</p>
+								<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>2023</option>
+											</select>
+											<span>人</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>8</option>
+											</select>
+											<span>月</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>24</option>
+											</select>
+											<span>日～</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+
+											<select class="form-control">
+												<option>2023</option>
+											</select>
+											<span>年</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>8</option>
+												<span>月</span>
+											</select>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>24</option>
+
+											</select>
+											<span>日</span>
+										</div>
+									</div>
+								</div>
+								<p class="c-fc--red">
+									※通常販売しているプランを割安料金・特典を設定せずに期間限定販売した場合、不当表示にあたる可能性があります。ご注意ください。
+								</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item mbpc-30 flex">
+						<dt>
+							<sup>*</sup>プラン名
+						</dt>
+						<dd>
 							<div class="flex flex--light-center">
 								<input type="text" class="form-control w75">
 								<span class="c-fc--red ml--15">(全角50文字以内)</span>
 							</div>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>予約受付・<br>予約変更締<br>切時間
-					</dt>
-					<dd>
-						<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<span class="mr--15">宿泊日の当日</span>
-									<select class="form-control">
-										<option>当日</option>
-									</select>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>プランの説明
+						</dt>
+						<dd>
+							<textarea class="form-control w66 mbpc-10"></textarea>
+							<p class="c-fc--red">(全角1000文字以内)(2000バイト)</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							グローバル集<br>客サービス用<br>追加情報
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl">[プランの特徴]</h3>
+							<p>食事 <span class="c-fc--red">※食事付プランの場合のみ、食事の特徴をチェックしてください。</span></p>
+							<h3 class="register-item__ttl ">■朝食</h3>
+							<p>【ジャンル】</p>
+							<ul class="pure-list flex">
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox" >
+										<span>和食</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>洋食</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>中華</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>バイキング</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>軽食</span>
+									</div>
+								</li>
+							</ul>
+							<h3 class="register-item__ttl">■夕食</h3>
+							<p>【ジャンル】</p>
+							<ul class="pure-list flex">
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox" >
+										<span>イタリアン</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>中華</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>フレンチ</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>BBQ</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>会席</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>バイキング</span>
+									</div>
+								</li>
+							</ul>
+							<p>【メインの食材】</p>
+							<ul class="pure-list flex">
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox" >
+										<span>海鮮</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>伊勢海老</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>カニ</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>鯛</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>アワビ</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>フグ</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>牛肉</span>
+									</div>
+								</li>
+							</ul>
+							<p>その他の特徴</p>
+							<ul class="pure-list flex">
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox" >
+										<span>早割</span>
+									</div>
+								</li>
+								<li>
+									<div class="pure-list__input">
+										<input name="checkbox" type="checkbox">
+										<span>期間限定</span>
+									</div>
+								</li>
+							</ul>
+							<h3 class="register-item__ttl">[フリーワード(英語)] <span class="c-fc--red">※選択肢にない場合、以下フリーワードで入力してください。</span></h3>
+							<span class="c-fc--blue js-block-border">編集</span>
+							<div class="block-border hidden">
+								<h3 class="register-item__ttl">[受入条件]</h3>
+								<ul class="pure-list flex">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox" >
+											<span>男性限定</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>女性限定</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>50歳以上</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>60歳以上</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>おまかせ客室</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>清掃なし</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>改装・工事中</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>停電あり</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>誕生日限定</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>学生限定</span>
+										</div>
+									</li>
+								</ul>
+								<h3 class="register-item__ttl">[フリーワード(英語)] <span class="c-fc--red">※選択肢にない場合、以下フリーワードで入力してください。</span></h3>
+								<div class="flex flex--light-center">
+									<input type="text" class="form-control w75">
+									<span class="c-fc--red ml--15">(全角50文字以内)</span>
 								</div>
 							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>17</option>
-									</select>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<span  class="mr--15">時</span>
-									<select class="form-control">
-										<option>00</option>
-									</select>
-									<span>分</span>
-								</div>
-							</div>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>予約キャンセル<br>締切時間
-					</dt>
-					<dd>
-						<ul class="pure-list flex mb0">
-							<li class="w100 radiocopy2">
-								<div class="pure-list__input">
-									<input name="radiocopy2" type="radio" class="radio" >
-									<span>予約受付・予約変更締切時間と同じ</span>
-								</div>
-							</li>
-							<li class="w100 radiocopy-off2">
-								<div class="pure-list__input">
-									<input name="radiocopy2" type="radio" class="radio" checked="checked">
-									<span>設定する</span>
-								</div>
-							</li>
-						</ul>
-						<div class="js-date-coppy2">
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>予約受付・<br>予約変更締<br>切時間
+						</dt>
+						<dd>
 							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
 								<div class="register-boxsmall__item">
 									<div class="box flex flex--light-center">
@@ -514,236 +469,1854 @@
 									</div>
 								</div>
 							</div>
-							<p class="c-fc--red">※設定する場合は、予約受付・予約変更締切時間より後の時間を設定してください。</p>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>チェックイン<br>開始時刻
-					</dt>
-					<dd>
-						<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>15</option>
-									</select>
-									<span>時</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>00</option>
-									</select>
-									<span>分</span>
-								</div>
-							</div>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>チェックイン<br>最終時刻
-					</dt>
-					<dd>
-						<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>18</option>
-									</select>
-									<span>時</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>00</option>
-									</select>
-									<span>分</span>
-								</div>
-							</div>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>チェックアウト<br>時刻
-					</dt>
-					<dd>
-						<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>11</option>
-									</select>
-									<span>時</span>
-								</div>
-							</div>
-							<div class="register-boxsmall__item">
-								<div class="box flex flex--light-center">
-									<select class="form-control">
-										<option>00</option>
-									</select>
-									<span>分</span>
-								</div>
-							</div>
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>最短連泊数
-					</dt>
-					<dd>
-						<div class="flex flex--light-center">
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>予約キャンセル<br>締切時間
+						</dt>
+						<dd>
 							<ul class="pure-list flex mb0">
-								<li class="mb0 radioright--off">
+								<li class="w100 radiocopy2">
 									<div class="pure-list__input">
-										<input name="radioright" type="radio" class="radio">
-										<span>制限なし</span>
+										<input name="radiocopy2" type="radio" class="radio" >
+										<span>予約受付・予約変更締切時間と同じ</span>
 									</div>
 								</li>
-								<li class="mb0 radioright--on">
+								<li class="w100 radiocopy-off2">
 									<div class="pure-list__input">
-										<input name="radioright" type="radio" class="radio" checked="checked">
-										<span>制限あり</span>
+										<input name="radiocopy2" type="radio" class="radio" checked="checked">
+										<span>設定する</span>
 									</div>
 								</li>
 							</ul>
-							<div class="register-boxsmall register-boxsmall--02 flex mb0">
+							<div class="js-date-coppy2">
+								<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<span class="mr--15">宿泊日の当日</span>
+											<select class="form-control">
+												<option>当日</option>
+											</select>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>17</option>
+											</select>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<span  class="mr--15">時</span>
+											<select class="form-control">
+												<option>00</option>
+											</select>
+											<span>分</span>
+										</div>
+									</div>
+								</div>
+								<p class="c-fc--red">※設定する場合は、予約受付・予約変更締切時間より後の時間を設定してください。</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックイン<br>開始時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
 								<div class="register-boxsmall__item">
-									<div class="box flex flex--light-center radioright-show">
-										<span class="mr--15">（最低</span>
-										<input type="text" class="form-control mw-100" maxlength="1">
-										<span>泊以上）</span>
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>15</option>
+										</select>
+										<span>時</span>
 									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックイン<br>最終時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>18</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックアウト<br>時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>11</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最短連泊数
+						</dt>
+						<dd>
+							<div class="flex flex--light-center">
+								<ul class="pure-list flex mb0">
+									<li class="mb0 radioright--off">
+										<div class="pure-list__input">
+											<input name="radioright" type="radio" class="radio">
+											<span>制限なし</span>
+										</div>
+									</li>
+									<li class="mb0 radioright--on">
+										<div class="pure-list__input">
+											<input name="radioright" type="radio" class="radio" checked="checked">
+											<span>制限あり</span>
+										</div>
+									</li>
+								</ul>
+								<div class="register-boxsmall register-boxsmall--02 flex mb0">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center radioright-show">
+											<span class="mr--15">（最低</span>
+											<input type="text" class="form-control mw-100" maxlength="1">
+											<span>泊以上）</span>
+										</div>
+									</div>
+
 								</div>
 
 							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最長連泊数
+						</dt>
+						<dd>
+							<div class="flex flex--light-center">
+								<ul class="pure-list flex mb0">
+									<li>
+										<div class="pure-list__input">
+											<input name="radio3" type="radio" class="radio" checked="checked">
+											<span>制限なし</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="radio3" type="radio" class="radio" >
+											<span>制限あり</span>
+										</div>
+									</li>
+								</ul>
+								<p>※最大で「9」泊まで設定可能です。</p>
 
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>最長連泊数
-					</dt>
-					<dd>
-						<div class="flex flex--light-center">
-							<ul class="pure-list flex mb0">
-								<li>
-									<div class="pure-list__input">
-										<input name="radio3" type="radio" class="radio" checked="checked">
-										<span>制限なし</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="radio3" type="radio" class="radio" >
-										<span>制限あり</span>
-									</div>
-								</li>
-							</ul>
-							<p>※最大で「9」泊まで設定可能です。</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>食事設定
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl mbpc-5">■朝食</h3>
+							<div class="flex flex--light-center mbpc-20">
+								<ul class="pure-list mr--50 flex mb0">
+									<li class="radioright--off02">
+										<div class="pure-list__input">
+											<input name="radio4" type="radio" class="radio" >
+											<span>なし</span>
+										</div>
+									</li>
+									<li class="radioright--on02">
+										<div class="pure-list__input">
+											<input name="radio4" type="radio" class="radio" checked="checked">
+											<span>付き</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="pure-list flex mb0 radioright-show02">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>部屋出し</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>個室利用</span>
+										</div>
+									</li>
+								</ul>
 
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						<sup>*</sup>食事設定
-					</dt>
-					<dd>
-						<h3 class="register-item__ttl">■朝食</h3>
-						<div class="flex flex--light-center mbpc-20">
-							<ul class="pure-list mr--50 flex mb0">
-								<li class="radioright--off02">
-									<div class="pure-list__input">
-										<input name="radio4" type="radio" class="radio" >
-										<span>なし</span>
-									</div>
-								</li>
-								<li class="radioright--on02">
-									<div class="pure-list__input">
-										<input name="radio4" type="radio" class="radio" checked="checked">
-										<span>付き</span>
-									</div>
-								</li>
-							</ul>
-							<ul class="pure-list flex mb0 radioright-show02">
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>部屋出し</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>個室利用</span>
-									</div>
-								</li>
-							</ul>
+							</div>
+							<h3 class="register-item__ttl mbpc-5">■夕食</h3>
+							<div class="flex flex--light-center">
+								<ul class="pure-list mr--50 flex mb0">
+									<li class="radioright--off03">
+										<div class="pure-list__input">
+											<input name="radio5" type="radio" class="radio" >
+											<span>なし</span>
+										</div>
+									</li>
+									<li class="radioright--on03">
+										<div class="pure-list__input">
+											<input name="radio5" type="radio" class="radio" checked="checked">
+											<span>付き</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="pure-list flex mb0 radioright-show03">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>部屋出し</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>個室利用</span>
+										</div>
+									</li>
+								</ul>
 
-						</div>
-						<h3 class="register-item__ttl">■夕食</h3>
-						<div class="flex flex--light-center">
-							<ul class="pure-list mr--50 flex mb0">
-								<li class="radioright--off03">
-									<div class="pure-list__input">
-										<input name="radio5" type="radio" class="radio" >
-										<span>なし</span>
-									</div>
-								</li>
-								<li class="radioright--on03">
-									<div class="pure-list__input">
-										<input name="radio5" type="radio" class="radio" checked="checked">
-										<span>付き</span>
-									</div>
-								</li>
-							</ul>
-							<ul class="pure-list flex mb0 radioright-show03">
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>部屋出し</span>
-									</div>
-								</li>
-								<li>
-									<div class="pure-list__input">
-										<input name="checkbox" type="checkbox">
-										<span>個室利用</span>
-									</div>
-								</li>
-							</ul>
-
-						</div>
-					</dd>
-				</dl>
-				<dl class="register-item flex">
-					<dt>
-						予約者への質問
-					</dt>
-					<dd>
-						<textarea class="form-control w66 mbpc-10"></textarea>
-						<p class="c-fc--red">(全角200文字以内)(400バイト)</p>
-						<div class="pure-list__input mbpc-10">
-							<input name="checkbox" type="checkbox">
-							<span>予約者にこの質問への回答を必須にする（予約者全員にあてはまらない質問の場合、<br>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							予約者への質問
+						</dt>
+						<dd>
+							<textarea class="form-control w66 mbpc-10"></textarea>
+							<p class="c-fc--red">(全角200文字以内)(400バイト)</p>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>予約者にこの質問への回答を必須にする（予約者全員にあてはまらない質問の場合、<br>
 								回答必須にしないでください。）</span>
-						</div>
-						<p class="note-z c-fc--red">
-							※パッケージツアーでは予約の際、予約者への質問の回答欄が表示されません。<br>
-							　確認が必要な場合には <a href="" class="c-fc--blue">JALじゃらんパック</a><a href="" class="c-fc--blue">/ ANAじゃらんパック</a><a href="" class="c-fc--blue">/ 赤い風船JRじゃらんパック</a><br>
-							　を通じて予約者へご連絡をお願いします。<br>
-							　各社の連絡先は上記リンクより各マニュアルにてご確認ください。<br>
-							　プラン/販路毎の販売設定は「販路別販売設定」画面より設定してください。
+							</div>
+							<p class="note-z c-fc--red">
+								※パッケージツアーでは予約の際、予約者への質問の回答欄が表示されません。<br>
+								　確認が必要な場合には <a href="" class="c-fc--blue">JALじゃらんパック</a><a href="" class="c-fc--blue">/ ANAじゃらんパック</a><a href="" class="c-fc--blue">/ 赤い風船JRじゃらんパック</a><br>
+								　を通じて予約者へご連絡をお願いします。<br>
+								　各社の連絡先は上記リンクより各マニュアルにてご確認ください。<br>
+								　プラン/販路毎の販売設定は「販路別販売設定」画面より設定してください。
+							</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							宿への要望
+						</dt>
+						<dd>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>予約者に「宿への要望」を聞く</span>
+							</div>
+							<h3 class="register-item__ttl">ここをチェックすると、ユーザの予約画面で「宿への要望」を記入する欄が表示されます。もし要望が寄せられた場合は、記入されたユーザに対してメール・電話等で返信されるのを推奨いたします。 </h3>
+							<p class="note-z">
+								<予約者に対しては、予約画面で以下のようにアナウンスされています。><br>
+								ご要望があればご記入ください。<br>
+								内容によってはご期待に添えない場合もございます。<br>
+								要望の対応可否に関しては、予約後、宿泊施設へ直接お問い合わせ下さい。
+							</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>決済手段
+						</dt>
+						<dd>
+							<ul class="pure-list flex mbpc-10 ">
+								<li class="mb0  w100 radioright--off04">
+									<div class="pure-list__input">
+										<input name="radio6" type="radio" class="radio">
+										<span>現地払いのみ</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--off04">
+									<div class="pure-list__input">
+										<input name="radio6" type="radio" class="radio">
+										<span>現地払い／オンラインカード決済兼用</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--on04">
+									<div class="pure-list__input">
+										<input name="radio6" type="radio" class="radio" checked="checked">
+										<span>オンラインカード決済のみ</span>
+									</div>
+								</li>
+							</ul>
+							<div class="radioright-show04 note-z c-fc--red">
+								<p>
+									じゃらんnet(宿泊)<br>
+									・"現地払いのみ"、"現地払い/オンラインカード決済兼用"を選択した場合、予約基本設定で設定した「基本キャンセル規定」が適用されます。<br>
+									・"オンラインカード決済のみ"を選択した場合、「キャンセル規定の設定」にて、このプランに「個別のキャンセル規定」を設定できます。<br>
+									・"現地払いのみ"、"現地払い/オンラインカード決済兼用"を選択した場合でも、法人一括決済が可能となります。<br>
+									パッケージツアー<br>
+									・いずれの決済手段を選択した場合でも、<a href=""class="c-fc--blue">じゃらんパックのキャンセル規定</a>が適用されます。
+								</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex mbpc-5">
+						<dt>
+							■キャンセル規<br>定の設定
+						</dt>
+						<dd>
+							<ul class="pure-list flex mbpc-10 ">
+								<li class="mb0  w100 radioright--off05">
+									<div class="pure-list__input">
+										<input name="radio7" type="radio" class="radio">
+										<span>このプランに基本キャンセル規定を設定する</span>
+									</div>
+								</li>
+								<li class="mb0  w100 radioright--on05">
+									<div class="pure-list__input">
+										<input name="radio7" type="radio" class="radio" checked="checked">
+										<span>このプランに個別のキャンセル規定を設定する</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--off05">
+									<div class="pure-list__input">
+										<input name="radio7" type="radio" class="radio" >
+										<span>このプランにキャンセル規定を設定しない</span>
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<div class="radioright-show05  mbpc-30">
+						<p class="note-z c-fc--red mbpc-30">
+							※キャンセル規定は下記の7つの区分のうち、最大5つまで設定することが可能です。
 						</p>
-					</dd>
-				</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定<br>1NoShow<br>(無断不泊)の場合
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on06">
+												<div class="pure-list__input">
+													<input name="radio8" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off06">
+												<div class="pure-list__input">
+													<input name="radio8" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show06">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="100">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定<br>2当日キャンセ<br>ルの場合
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on07">
+												<div class="pure-list__input">
+													<input name="radio9" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off07">
+												<div class="pure-list__input">
+													<input name="radio9" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show07">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="70">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定3
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on08">
+												<div class="pure-list__input">
+													<input name="radio10" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off08">
+												<div class="pure-list__input">
+													<input name="radio10" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show08">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="1">
+													<span>日前（から）～</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<input type="text" class="form-control mw-50" value="1">
+													<span>日前（まで）キャンセルの場合</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item register-boxsmall__item--other w100">
+												<div class="box flex flex--light-center">
+													<p>入力例）宿泊日2日前から1日前(宿泊日から遠い日付を先に入れてください)</p>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="50">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定4
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on09">
+												<div class="pure-list__input">
+													<input name="radio11" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off09">
+												<div class="pure-list__input">
+													<input name="radio11" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show09">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="5">
+													<span>日前（から）～</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<input type="text" class="form-control mw-50" value="2">
+													<span>日前（まで）キャンセルの場合</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item register-boxsmall__item--other w100">
+												<div class="box flex flex--light-center">
+													<p>入力例）宿泊日7日前から3日前(宿泊日から遠い日付を先に入れてください)</p>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="30">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定5
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on10">
+												<div class="pure-list__input">
+													<input name="radio12" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off10">
+												<div class="pure-list__input">
+													<input name="radio12" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show10">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="10">
+													<span>日前（から）～</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<input type="text" class="form-control mw-50" value="6">
+													<span>日前（まで）キャンセルの場合</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item register-boxsmall__item--other w100">
+												<div class="box flex flex--light-center">
+													<p>入力例）宿泊日14日前から8日前(宿泊日から遠い日付を先に入れてください)</p>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="10">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+					</div>
+
+
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最長連泊数
+						</dt>
+						<dd>
+							<p>宿ログに新規投稿するかどうか、選択してください。</p>
+							<p class="c-fc--red">※掲載期間を指定している場合、宿ログ自動投稿はできません。ご了承ください。</p>
+							<ul class="pure-list flex mbpc-10">
+								<li class=" w100 radioright--off11">
+									<div class="pure-list__input">
+										<input name="radio13" type="radio" class="radio">
+										<span>宿ログに投稿する（掲載内容は自動）</span>
+									</div>
+								</li>
+								<li class=" w100 note-z">
+									<p><a href="" class="c-fc--blue">自動投稿の掲載例を見る</a></p>
+								</li>
+								<li class="w100 radioright--on11">
+									<div class="pure-list__input">
+										<input name="radio13" type="radio" class="radio" checked="checked">
+										<span>
+										オンラインカード決済のみ<br>
+										   掲載したい内容を入力してください。
+									</span>
+									</div>
+								</li>
+							</ul>
+							<div class="radioright-show11 mbpc-10">
+								<h3 class="register-item__ttl">記事タイトル</h3>
+								<div class="flex flex--light-center mbpc-15">
+									<input type="text" class="form-control w75">
+									<span class="c-fc--red ml--15">(全角50文字以内)</span>
+								</div>
+								<h3 class="register-item__ttl">記事タイトル</h3>
+								<p class="c-fc--red">(全角1000文字以内)</p>
+								<div class="flex flex--light-center">
+									<textarea class="form-control w66 mbpc-10"></textarea>
+								</div>
+							</div>
+							<ul class="pure-list flex mbpc-10">
+								<li class=" w100 radioright--off11">
+									<div class="pure-list__input">
+										<input name="radio13" type="radio" class="radio">
+										<span>宿ログに投稿しない</span>
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							じゃらんnet掲<br>載順
+						</dt>
+						<dd>
+							<p>
+								登録するプランをじゃらんnet掲載順の最上順位（先頭）に配置したい場合は選択してください。<br>
+								選択されない場合は最下順位（末尾）に追加されます。
+							</p>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>じゃらんnet掲載順の最上順位（先頭）に配置する</span>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--end tab-01-->
+
+
+				<!--tab-02-->
+				<div class="tab-content hidden">
+					<h3 class="register-item__ttl">3. プランを登録してください。</h3>
+					<div class="register-block__heading flex flex--center flex--light-center">
+						<span class="register-block__heading-coppy">以前登録したプランの内容をコピーして使う</span>
+						<span class="register-block__heading-coppy-btn">コピーする</span>
+					</div>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>登録期間の設定
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl">※売り出す料金が決定している期間を設定してください。</h3>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>2023</option>
+										</select>
+										<span>人</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>8</option>
+										</select>
+										<span>月</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>24</option>
+										</select>
+										<span>日～</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+
+										<select class="form-control">
+											<option>2023</option>
+										</select>
+										<span>年</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>8</option>
+											<span>月</span>
+										</select>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>24</option>
+
+										</select>
+										<span>日</span>
+									</div>
+								</div>
+							</div>
+
+						</dd>
+					</dl>
+					<dl class="register-item mbpc-25 flex">
+						<dt>
+							<sup>*</sup>プラン名
+						</dt>
+						<dd>
+							<div class="flex flex--light-center">
+								<input type="text" class="form-control w75">
+								<span class="c-fc--red ml--15">(全角50文字以内)</span>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>プランの説明
+						</dt>
+						<dd>
+							<textarea class="form-control w66 mbpc-10"></textarea>
+							<p class="c-fc--red">(全角1000文字以内)(2000バイト)</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>予約受付開<br>始時間
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>1</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>予約受付終了<br>時間
+
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>17</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックイン<br>開始時刻
+
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>15</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックイン<br>最終時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>18</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックアウト<br>時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>11</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最短連泊数
+						</dt>
+						<dd>
+							<p class="register-item__ttl f-w--400">１泊</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最長連泊数
+						</dt>
+						<dd>
+							<p class="register-item__ttl f-w--400">１泊</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>食事設定
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl mbpc-5">■朝食</h3>
+							<div class="flex flex--light-center mbpc-20">
+								<ul class="pure-list mr--50 flex mb0">
+									<li class="radioright--off12">
+										<div class="pure-list__input">
+											<input name="radio14" type="radio" class="radio">
+											<span>なし</span>
+										</div>
+									</li>
+									<li class="radioright--on12">
+										<div class="pure-list__input">
+											<input name="radio14" type="radio" class="radio" checked="checked">
+											<span>付き</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="pure-list flex mb0 radioright-show12">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>部屋出し</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>個室利用</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<h3 class="register-item__ttl mbpc-5">■夕食</h3>
+							<div class="flex flex--light-center">
+								<ul class="pure-list mr--50 flex mb0">
+									<li class="radioright--off13">
+										<div class="pure-list__input">
+											<input name="radio15" type="radio" class="radio">
+											<span>なし</span>
+										</div>
+									</li>
+									<li class="radioright--on13">
+										<div class="pure-list__input">
+											<input name="radio15" type="radio" class="radio" checked="checked">
+											<span>付き</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="pure-list flex mb0 radioright-show13">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>部屋出し</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>個室利用</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt> 予約者への質問 </dt>
+						<dd>
+							<textarea class="form-control w66 mbpc-10"></textarea>
+							<p class="c-fc--red">(全角200文字以内)(400バイト)</p>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>予約者にこの質問への回答を必須にする（予約者全員にあてはまらない質問の場合、<br> 回答必須にしないでください。）</span>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt> 宿への要望 </dt>
+						<dd>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>予約者に「宿への要望」を聞く</span>
+							</div>
+							<h3 class="register-item__ttl">ここをチェックすると、ユーザの予約画面で「宿への要望」を記入する欄が表示されます。もし要望が寄せられた場合は、記入されたユーザに対してメール・電話等で返信されるのを推奨いたします。</h3>
+							<p class="note-z">
+								&lt;予約者に対しては 、予約画面で以下のようにアナウンスされています。&gt;<br> ご要望があればご記入ください。<br> 内容によってはご期待に添えない場合もございます。<br> 要望の対応可否に関しては、予約後、宿泊施設へ直接お問い合わせ下さい。 <!--予約者に対しては-->
+							</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt> じゃらんnet掲<br>載順 </dt>
+						<dd>
+							<p> 登録するプランをじゃらんnet掲載順の最上順位（先頭）に配置したい場合は選択してください。<br> 選択されない場合は最下順位（末尾）に追加されます。 </p>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>じゃらんnet掲載順の最上順位（先頭）に配置する</span>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--end tab-02-->
+
+
+
+				<!--tab-03-->
+				<div class="tab-content hidden">
+					<h3 class="register-item__ttl">3. プランを登録してください。</h3>
+					<div class="register-block__heading flex flex--center flex--light-center">
+						<span class="register-block__heading-coppy">以前登録したプランの内容をコピーして使う</span>
+						<span class="register-block__heading-coppy-btn">コピーする</span>
+					</div>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>登録期間の設定
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl">※売り出す料金が決定している期間を設定してください。</h3>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>2023</option>
+										</select>
+										<span>人</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>8</option>
+										</select>
+										<span>月</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>24</option>
+										</select>
+										<span>日～</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+
+										<select class="form-control">
+											<option>2023</option>
+										</select>
+										<span>年</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>8</option>
+											<span>月</span>
+										</select>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>24</option>
+
+										</select>
+										<span>日</span>
+									</div>
+								</div>
+							</div>
+
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>掲載期間の設定
+						</dt>
+						<dd>
+							<ul class="pure-list flex mb0">
+								<li class="w100 radioright--off14">
+									<div class="pure-list__input">
+										<input name="radio16" type="radio" class="radio" >
+										<span>設定しない</span>
+									</div>
+								</li>
+								<li class="w100 radioright--on14">
+									<div class="pure-list__input">
+										<input name="radio16" type="radio" class="radio" checked="checked">
+										<span>設定する</span>
+									</div>
+								</li>
+							</ul>
+							<div class="radioright-show14">
+								<p>以前登録したプランの内容をコピーして使う</p>
+								<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>2023</option>
+											</select>
+											<span>人</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>8</option>
+											</select>
+											<span>月</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>24</option>
+											</select>
+											<span>日～</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+
+											<select class="form-control">
+												<option>2023</option>
+											</select>
+											<span>年</span>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>8</option>
+												<span>月</span>
+											</select>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>24</option>
+
+											</select>
+											<span>日</span>
+										</div>
+									</div>
+								</div>
+								<p class="c-fc--red">
+									※通常販売しているプランを割安料金・特典を設定せずに期間限定販売した場合、不当表示にあたる可能性があります。ご注意ください。
+								</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item mbpc-30 flex">
+						<dt>
+							<sup>*</sup>プラン名
+						</dt>
+						<dd>
+							<div class="flex flex--light-center">
+								<input type="text" class="form-control w75">
+								<span class="c-fc--red ml--15">(全角50文字以内)</span>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>プランの説明
+						</dt>
+						<dd>
+							<textarea class="form-control w66 mbpc-10"></textarea>
+							<p class="c-fc--red">(全角1000文字以内)(2000バイト)</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>予約受付・<br>予約変更締<br>切時間
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<span class="mr--15">宿泊日の当日</span>
+										<select class="form-control">
+											<option>当日</option>
+										</select>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>17</option>
+										</select>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<span class="mr--15">時</span>
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>予約キャンセル<br>締切時間
+						</dt>
+						<dd>
+							<ul class="pure-list flex mb0">
+								<li class="w100 radioright--off15">
+									<div class="pure-list__input">
+										<input name="radio17" type="radio" class="radio">
+										<span>予約受付・予約変更締切時間と同じ</span>
+									</div>
+								</li>
+								<li class="w100 radioright--on15">
+									<div class="pure-list__input">
+										<input name="radio17" type="radio" class="radio" checked="checked">
+										<span>予約受付・予約変更締切時間と別の時間を設定する</span>
+									</div>
+								</li>
+							</ul>
+							<div class="radioright-show15">
+								<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<span class="mr--15">宿泊日の当日</span>
+											<select class="form-control">
+												<option>当日</option>
+											</select>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<select class="form-control">
+												<option>17</option>
+											</select>
+										</div>
+									</div>
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center">
+											<span class="mr--15">時</span>
+											<select class="form-control">
+												<option>00</option>
+											</select>
+											<span>分</span>
+										</div>
+									</div>
+								</div>
+								<p class="c-fc--red">※設定する場合は、予約受付・予約変更締切時間より後の時間を設定してください。</p>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックイン<br>開始時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>15</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックイン<br>最終時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>18</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>チェックアウト<br>時刻
+						</dt>
+						<dd>
+							<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>11</option>
+										</select>
+										<span>時</span>
+									</div>
+								</div>
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<select class="form-control">
+											<option>00</option>
+										</select>
+										<span>分</span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>販売限定数
+						</dt>
+						<dd>
+							<ul class="pure-list flex mb0">
+								<li class="mb0 w100 radioright--off16">
+									<div class="pure-list__input">
+										<input name="radio18" type="radio" class="radio">
+										<span>設定しない</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--on16">
+									<div class="pure-list__input">
+										<input name="radio18" type="radio" class="radio" checked="checked">
+										<span>設定する</span>
+									</div>
+								</li>
+							</ul>
+							<div class="register-boxsmall register-boxsmall--02 flex mb0 radioright-show16">
+								<div class="register-boxsmall__item">
+									<div class="box flex flex--light-center">
+										<span class="mr--15">限定販売数</span>
+										<input type="text" class="form-control mw-100">
+										<span>予約 <span class="c-fc--red inline-block ml--15">※必須</span></span>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最短連泊数
+						</dt>
+						<dd>
+							<div class="flex flex--light-center">
+								<ul class="pure-list flex mb0">
+									<li class="mb0 radioright--off17">
+										<div class="pure-list__input">
+											<input name="radio19" type="radio" class="radio">
+											<span>制限なし</span>
+										</div>
+									</li>
+									<li class="mb0 radioright--on17">
+										<div class="pure-list__input">
+											<input name="radio19" type="radio" class="radio" checked="checked">
+											<span>制限あり</span>
+										</div>
+									</li>
+								</ul>
+								<div class="register-boxsmall register-boxsmall--02 flex mb0">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center radioright-show17 ">
+											<span class="mr--15">（最低</span>
+											<input type="text" class="form-control mw-100" maxlength="1">
+											<span>泊以上）</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>最長連泊数
+						</dt>
+						<dd>
+							<div class="flex flex--light-center">
+								<ul class="pure-list flex mbpc-10">
+									<li class="mb0 radioright--off18">
+										<div class="pure-list__input">
+											<input name="radio20" type="radio" class="radio">
+											<span>制限なし</span>
+										</div>
+									</li>
+									<li class="mb0 radioright--on18">
+										<div class="pure-list__input">
+											<input name="radio20" type="radio" class="radio" checked="checked">
+											<span>制限あり</span>
+										</div>
+									</li>
+								</ul>
+								<div class="register-boxsmall register-boxsmall--02 flex mbpc-10">
+									<div class="register-boxsmall__item">
+										<div class="box flex flex--light-center radioright-show18 ">
+											<span class="mr--15">（最低</span>
+											<input type="text" class="form-control mw-100" maxlength="1">
+											<span>泊以上）</span>
+										</div>
+									</div>
+								</div>
+								<p class="radioright-show18 ml--0">
+									※最大で「9」泊まで設定可能です。
+								</p>
+							</div>
+
+
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>食事設定
+						</dt>
+						<dd>
+							<h3 class="register-item__ttl mbpc-5">■朝食</h3>
+							<div class="flex flex--light-center mbpc-20">
+								<ul class="pure-list mr--50 flex mb0">
+									<li class="radioright--off19">
+										<div class="pure-list__input">
+											<input name="radio21" type="radio" class="radio">
+											<span>なし</span>
+										</div>
+									</li>
+									<li class="radioright--on19">
+										<div class="pure-list__input">
+											<input name="radio21" type="radio" class="radio" checked="checked">
+											<span>付き</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="pure-list flex mb0 radioright-show19">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>部屋出し</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>個室利用</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<h3 class="register-item__ttl mbpc-5">■夕食</h3>
+							<div class="flex flex--light-center">
+								<ul class="pure-list mr--50 flex mb0">
+									<li class="radioright--off20">
+										<div class="pure-list__input">
+											<input name="radio22" type="radio" class="radio">
+											<span>なし</span>
+										</div>
+									</li>
+									<li class="radioright--on20">
+										<div class="pure-list__input">
+											<input name="radio22" type="radio" class="radio" checked="checked">
+											<span>付き</span>
+										</div>
+									</li>
+								</ul>
+								<ul class="pure-list flex mb0 radioright-show20">
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>部屋出し</span>
+										</div>
+									</li>
+									<li>
+										<div class="pure-list__input">
+											<input name="checkbox" type="checkbox">
+											<span>個室利用</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt> 予約者への質問 </dt>
+						<dd>
+							<textarea class="form-control w66 mbpc-10"></textarea>
+							<p class="c-fc--red">(全角200文字以内)(400バイト)</p>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>予約者にこの質問への回答を必須にする（予約者全員にあてはまらない質問の場合、<br> 回答必須にしないでください。）</span>
+							</div>
+
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt> 宿への要望 </dt>
+						<dd>
+							<div class="pure-list__input mbpc-10">
+								<input name="checkbox" type="checkbox">
+								<span>予約者に「宿への要望」を聞く</span>
+							</div>
+							<h3 class="register-item__ttl">ここをチェックすると、ユーザの予約画面で「宿への要望」を記入する欄が表示されます。もし要望が寄せられた場合は、記入されたユーザに対してメール・電話等で返信されるのを推奨いたします。</h3>
+							<p class="note-z">
+								&lt;予約者に対しては 、予約画面で以下のようにアナウンスされています。&gt;<br> ご要望があればご記入ください。<br> 内容によってはご期待に添えない場合もございます。<br> 要望の対応可否に関しては、予約後、宿泊施設へ直接お問い合わせ下さい。 <!--予約者に対しては-->
+							</p>
+						</dd>
+					</dl>
+					<dl class="register-item flex">
+						<dt>
+							<sup>*</sup>決済手段
+						</dt>
+						<dd>
+							<ul class="pure-list flex mbpc-10">
+								<li class="mb0 w100 radioright--off21">
+									<div class="pure-list__input">
+										<input name="radio23" type="radio" class="radio">
+										<span>現地払いのみ</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--off21">
+									<div class="pure-list__input">
+										<input name="radio23" type="radio" class="radio">
+										<span>現地払い／オンラインカード決済兼用</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--on21">
+									<div class="pure-list__input">
+										<input name="radio23" type="radio" class="radio" checked="checked">
+										<span>オンラインカード決済のみ</span>
+									</div>
+								</li>
+							</ul>
+							<div class="radioright-show21 note-z c-fc--red">
+								<p> じゃらんnet(宿泊)<br> ・"現地払いのみ"、"現地払い/オンラインカード決済兼用"を選択した場合、予約基本設定で設定した「基本キャンセル規定」が適用されます。<br> ・"オンラインカード決済のみ"を選択した場合、「キャンセル規定の設定」にて、このプランに「個別のキャンセル規定」を設定できます。<br> ・"現地払いのみ"、"現地払い/オンラインカード決済兼用"を選択した場合でも、法人一括決済が可能となります。<br> パッケージツアー</p>
+							</div>
+						</dd>
+					</dl>
+
+					<dl class="register-item flex mbpc-5">
+						<dt>
+							■キャンセル規<br>定の設定
+						</dt>
+						<dd>
+							<ul class="pure-list flex mbpc-10 ">
+								<li class="mb0  w100 radioright--off22">
+									<div class="pure-list__input">
+										<input name="radio24" type="radio" class="radio">
+										<span>このプランに基本キャンセル規定を設定する</span>
+									</div>
+								</li>
+								<li class="mb0  w100 radioright--on22">
+									<div class="pure-list__input">
+										<input name="radio24" type="radio" class="radio" checked="checked">
+										<span>このプランに個別のキャンセル規定を設定する</span>
+									</div>
+								</li>
+								<li class="mb0 w100 radioright--off22">
+									<div class="pure-list__input">
+										<input name="radio24" type="radio" class="radio" >
+										<span>このプランにキャンセル規定を設定しない</span>
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+					<div class="radioright-show22  mbpc-30">
+						<p class="note-z c-fc--red mbpc-30">
+							※キャンセル規定は下記の7つの区分のうち、最大5つまで設定することが可能です。
+						</p>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定<br>1NoShow<br>(無断不泊)の場合
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on06">
+												<div class="pure-list__input">
+													<input name="radio8" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off06">
+												<div class="pure-list__input">
+													<input name="radio8" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show06">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="100">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定<br>2当日キャンセ<br>ルの場合
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on07">
+												<div class="pure-list__input">
+													<input name="radio9" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off07">
+												<div class="pure-list__input">
+													<input name="radio9" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show07">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="70">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定3
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on08">
+												<div class="pure-list__input">
+													<input name="radio10" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off08">
+												<div class="pure-list__input">
+													<input name="radio10" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show08">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="1">
+													<span>日前（から）～</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<input type="text" class="form-control mw-50" value="1">
+													<span>日前（まで）キャンセルの場合</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item register-boxsmall__item--other w100">
+												<div class="box flex flex--light-center">
+													<p>入力例）宿泊日2日前から1日前(宿泊日から遠い日付を先に入れてください)</p>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="50">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定4
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on09">
+												<div class="pure-list__input">
+													<input name="radio11" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off09">
+												<div class="pure-list__input">
+													<input name="radio11" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show09">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="5">
+													<span>日前（から）～</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<input type="text" class="form-control mw-50" value="2">
+													<span>日前（まで）キャンセルの場合</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item register-boxsmall__item--other w100">
+												<div class="box flex flex--light-center">
+													<p>入力例）宿泊日7日前から3日前(宿泊日から遠い日付を先に入れてください)</p>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="30">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+						<dl class="register-item flex">
+							<dt>
+								キャンセル規定5
+							</dt>
+							<dd>
+								<div class="flex box-flex">
+									<div class="box-left">
+										<h3 class="register-item__ttl">キャンセル料を</h3>
+										<ul class="pure-list flex mbpc-20 ">
+											<li class="mb0 radioright--off radioright--on10">
+												<div class="pure-list__input">
+													<input name="radio12" type="radio" class="radio" checked="checked">
+													<span>設定する</span>
+												</div>
+											</li>
+											<li class="mb0 radioright--on radioright--off10">
+												<div class="pure-list__input">
+													<input name="radio12" type="radio" class="radio" >
+													<span>設定しない</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="box-right radioright-show10">
+										<div class="register-boxsmall register-boxsmall--02 flex mbpc-10 mbsp-10">
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="10">
+													<span>日前（から）～</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<input type="text" class="form-control mw-50" value="6">
+													<span>日前（まで）キャンセルの場合</span>
+												</div>
+											</div>
+											<div class="register-boxsmall__item register-boxsmall__item--other w100">
+												<div class="box flex flex--light-center">
+													<p>入力例）宿泊日14日前から8日前(宿泊日から遠い日付を先に入れてください)</p>
+												</div>
+											</div>
+											<div class="register-boxsmall__item">
+												<div class="box flex flex--light-center">
+													<span class="mr--15">宿泊料金の</span>
+													<input type="text" class="form-control mw-50" value="10">
+													<span>%</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!--end tab-03-->
+
 			</div>
 			<div class="register-block">
 				<div class="js-item-fill">

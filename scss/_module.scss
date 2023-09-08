@@ -94,7 +94,7 @@ select.form-control{
 				& + span{
 					&:after{
 						background-color: transparent;
-						top: 11px;
+						top: 13px;
 						left: 4px;
 						width: 8px;
 						height: 3px;
@@ -151,7 +151,7 @@ select.form-control{
 				box-sizing: content-box;
 				content: '';
 				position: absolute;
-				top: 7px;
+				top: 9px;
 				left: 0;
 				width: 14px;
 				height: 14px;
@@ -164,7 +164,7 @@ select.form-control{
 				content: '';
 				background-color: #1890FF;
 				position: absolute;
-				top: 10px;
+				top: 12px;
 				left: 3px;
 				width: 10px;
 				height: 10px;
@@ -259,6 +259,9 @@ select.form-control{
 
 }
 .mw{
+	&-50{
+		max-width: 50px !important;
+	}
 	&-100{
 		max-width: 100px !important;
 	}
@@ -284,10 +287,21 @@ select.form-control{
 .hidden{
 	display: none !important;
 }
+.disabled{
+	pointer-events: none;
+	color: #ccc;
+}
+
+.inline-block{
+	display: inline-block !important;
+}
 
 .ml{
 	&--15{
-		margin-left: 15px;
+		margin-left: 15px !important;
+	}
+	&--0{
+		margin-left: 0px !important;
 	}
 }
 .mr{

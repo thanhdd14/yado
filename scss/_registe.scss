@@ -33,7 +33,7 @@
 		display: block;
 	}
 	.fill-option{
-		height: 400px;
+		height: 408px;
 		overflow-y: scroll;
 		margin-bottom: 20px;
 		li{
@@ -75,6 +75,12 @@
 			&.active{
 				background: #1890FF;
 				color: white;
+				a{
+					color: white;
+				}
+			}
+			a{
+				color: #333333;
 			}
 		}
 	}
@@ -120,7 +126,7 @@
 	cursor: pointer;
 }
 
-.radioright-show{
+.radioright-show,.radioright-show17,.radioright-show18{
 	margin-left: 30px;
 }
 .note-z{
@@ -128,5 +134,22 @@
 		display: inline-block;
 		margin: 0 2px;
 		text-decoration: underline;
+	}
+}
+.box-flex{
+	.box-left{
+		width: 30%;
+	}
+	.box-right{
+		width: 70%;
+		padding-left: 30px;
+		@include font-size(13);
+	}
+}
+
+.tab-content{
+	display: none;
+	&.active{
+		display: block;
 	}
 }
